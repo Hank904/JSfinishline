@@ -35,3 +35,13 @@ console.log(`OOOOOOh`);
 console.log(`oohhhh`);
 setTimeout(callback, 1000);
 setTimeout(calldih, 2000);
+
+const greet = (name, callback) => {
+    console.log(`Hello, ${name}!`);
+    callback();
+}
+
+const sayGoodbye = () => {
+    console.log(`Goodbye!`);
+}
+greet(`teresa`, sayGoodbye);
