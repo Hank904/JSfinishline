@@ -24,3 +24,14 @@ const countdownInterval = setInterval(() => {
         console.log("GO");
     }
 }, 1000);
+
+function callback() {
+    console.log(`Oh i hate gingers`);
+}
+function calldih(){
+    console.log(`Fuck gingers`);
+}
+console.log(`OOOOOOh`);
+console.log(`oohhhh`);
+setTimeout(callback, 1000);
+setTimeout(calldih, 2000);
