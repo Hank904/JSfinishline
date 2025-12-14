@@ -45,3 +45,5 @@ const sayGoodbye = () => {
     console.log(`Goodbye!`);
 }
 greet(`teresa`, sayGoodbye);
+
+const promiseDemo = new Promise(function(){});
