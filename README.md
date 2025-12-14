@@ -47,3 +47,23 @@ const sayGoodbye = () => {
 greet(`teresa`, sayGoodbye);
 
 const promiseDemo = new Promise(function(){});
+
+const orderCake = () => {
+    return new Promise(function(resolve, reject) {
+        if (dessertStock.cake > 0) {
+            resolve(`cake available! Order processing.`);
+        } else {
+            reject(`Out of stock. Sorry baby.`);
+        }
+    });
+}
+
+function handleSuccess(successValue) {
+    console.log(successValue);
+}
+
+function handleFailure(failureValue) {
+    console.log(failureValue)
+}
+const makeOrder = orderCake();
+makeOrder.then(handleSuccess).catch(handleFailure);
