@@ -48,3 +48,18 @@ const status2 = new Player2(90);
 
 status1.levelDisplay(); 
 status2.levelDisplay();
+
+
+class Login {
+    google() {
+        console.log(`Logging in with google.`);
+    }
+}
+class SignIn extends Login {
+    facebook() {
+        super.google();
+        console.log(`Loggin in with Facebook.`);
+    }
+}
+const a = new SignIn();
+a.facebook();
