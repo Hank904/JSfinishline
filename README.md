@@ -16,11 +16,15 @@ const pet = new virtualPet("dih");
 pet.eat("dih");
 
 
-class userInfo {
-    constructor (email, username, password) {
+class UserInfo {
+    constructor (password) {
+        this.password = password;
     }
 }
-const user1 = new userInfo("dih@gmail.com", "hank11", "Icantgoon");
-const user2 = new userInfo("donald@gmail.com", "donald", "paygorn");
-console.log(user1);
-console.log(user2);
+class Passwords extends UserInfo {}
+const password1 = new UserInfo("paygorn67");
+const password2 = new UserInfo("dihcheese");
+const password3 = new UserInfo("Icantgoon69!");
+console.log(password1);
+console.log(password2);
+console.log(password3);
